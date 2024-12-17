@@ -7,23 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const JsProject6 = document.getElementById('weather');
 
     JsProject1.addEventListener('click', () => {
-        window.location.href = 'JavaScript Projects/countries/projectPageCountries.html';
+        window.location.href = '../JavaScript Projects/countries/projectPageCountries.html';
     });
 
     JsProject2.addEventListener('click', () => {
-        window.location.href = 'JavaScript Projects/shoppingList/projectPageShoppingList.html';
+        window.location.href = '../JavaScript Projects/shoppingList/projectPageShoppingList.html';
     });
     JsProject3.addEventListener('click', () => {
-        window.location.href = 'JavaScript Projects/ticTacToe/projectPageTicTacToe.html';
+        window.location.href = '../JavaScript Projects/ticTacToe/projectPageTicTacToe.html';
     });
     JsProject4.addEventListener('click', () => {
-        window.location.href = 'JavaScript Projects/Math/projectPageMath.html';
+        window.location.href = '../JavaScript Projects/Math/projectPageMath.html';
     });
     JsProject5.addEventListener('click', () => {
-        window.location.href = 'JavaScript Projects/War/projectPageWar.html';
+        window.location.href = '../JavaScript Projects/War/projectPageWar.html';
     });
     JsProject6.addEventListener('click', () => {
-        window.location.href = 'JavaScript Projects/Weather/projectPageWeather.html';
+        window.location.href = '../JavaScript Projects/Weather/projectPageWeather.html';
     });
 
 
