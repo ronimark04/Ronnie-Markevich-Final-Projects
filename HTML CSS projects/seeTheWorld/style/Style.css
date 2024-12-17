@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5EEFF;
+
+}
+
+.mobile-form-container,
+.mobile-item1 {
+    display: none;
+}
+
+.container {
+    width: 65vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    margin: 140px 0;
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Makes the items stay perfect squares: */
+    position: relative;
+    padding-top: 100%;
+    padding-left: 100%;
+    overflow: hidden;
+}
+
+
+.item1 {
+    background-image: url(../images/Rectangle\ 515.png);
+}
+
+.item2 {
+    background-image: url(../images/Rectangle\ 514.png);
+}
+
+.item3 {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background-color: #020253;
+}
+
+.item4 {
+    background-image: url(../images/Rectangle\ 516.png);
+}
+
+.item5 {
+    background-image: url(../images/Rectangle\ 506-5.png);
+}
+
+.item6 {
+    background-image: url(../images/Rectangle\ 506-2.png);
+}
+
+.item7 {
+    background-image: url(../images/Rectangle\ 506-3.png);
+}
+
+.item8 {
+    background-image: url(../images/Rectangle\ 506-4.png);
+}
+
+.item9 {
+    background-image: url(../images/Rectangle\ 506-1.png);
+}
+
+.item10 {
+    grid-column: 1/3;
+    grid-row: 4/-1;
+    background-color: #8E097C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+.item11 {
+    background-image: url(../images/Rectangle\ 506-8.png);
+}
+
+.item12 {
+    background-image: url(../images/Rectangle\ 506-7.png);
+}
+
+.item13 {
+    background-image: url(../images/Rectangle\ 506-9.png);
+}
+
+.item14 {
+    background-image: url(../images/Rectangle\ 506-6.png);
+}
+
+.item15 {
+    background-image: url(../images/Rectangle\ 513.png);
+}
+
+.item16 {
+    background-image: url(../images/Rectangle\ 506.png);
+}
+
+.item10>.form {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    /* to center the form horizontally due to position:absolute: */
+    transform: translateX(-55%);
+    gap: 1em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.item10>.form>.form-control>label {
+    font: normal normal bold 1vw Heebo;
+    color: #0EE1DA;
+}
+
+.item10>.form>.form-control>input {
+    width: 90%;
+    height: 40px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 3px solid #0EE1DA;
+}
+
+.item10>.form>.form-control>#exp {
+    height: 150px;
+}
+
+.form>button {
+    font: normal normal bold 1vw Heebo;
+    color: #011560;
+    background-color: #0EE1DA;
+    border: none;
+    width: 90%;
+    height: 30px;
+}
+
+.form>button:hover {
+    cursor: pointer;
+}
+
+.item10>.form-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.item10>.form-text>h1 {
+    font: normal normal bold 2.2vw Assistant;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.item10>.form-text>p {
+    font: normal normal normal 1.2vw Assistant;
+    color: #F9F9F9;
+    text-align: center;
+    width: 85%;
+    margin-top: 7%;
+}
+
+.item3>.text-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-75%);
+    left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.item3>.text-container>h1 {
+    font: normal normal bold 3.2vw Assistant;
+    color: #0EE1DA;
+    text-align: center;
+    width: 85%;
+    margin-top: 7%;
+}
+
+.item3>.text-container>p {
+    font: normal normal normal 1.3vw Assistant;
+    color: #F9F9F9;
+    text-align: center;
+    width: 85%;
+    margin-top: 3%;
+}
+
+@media(max-width:1152px) {
+    .item10>.form>.form-control>input {
+        height: 30px;
+    }
+
+    .item10>.form>.form-control>#exp {
+        height: 75px;
+    }
+}
+
+@media(max-width:837px) {
+    .item10>.form>.form-control>input {
+        height: 20px;
+    }
+
+    .item10>.form>.form-control>#exp {
+        height: 65px;
+    }
+
+    .item10>.form {
+        gap: 0;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        width: 90vw;
+        height: 77vh;
+    }
+
+    .item3,
+    .item10 {
+        display: none;
+    }
+
+    .mobile-item1,
+    .mobile-form-container {
+        display: flex;
+    }
+
+    .mobile-item1 {
+        background-color: black;
+    }
+
+    .item8 {
+        grid-row: 3/4;
+    }
+
+    .item9 {
+        grid-row: 3/4;
+    }
+
+    .mobile-form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        grid-column: 1/3;
+        height: 650px;
+        background-color: #8E097C;
+    }
+
+    .mobile-form-container>h1 {
+        font: normal normal bold 6vw Assistant;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .mobile-form-container>p {
+        font: normal normal normal 3.6vw Assistant;
+        color: #F9F9F9;
+        text-align: center;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .mobile-form-container>.mobile-form {
+        display: flex;
+        flex-direction: column;
+        direction: rtl;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .mobile-form-container>.mobile-form>.mobile-form-control {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-self: center;
+    }
+
+    .mobile-form-container>.mobile-form>.mobile-form-control>label {
+        font: normal normal bold 2vw Heebo;
+        color: #0EE1DA;
+        align-self: right;
+        margin-bottom: 7px;
+    }
+
+    .mobile-form-container>.mobile-form>.mobile-form-control>input {
+        width: 100%;
+        height: 40px;
+        background-color: #E5EEFF;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 3px solid #0EE1DA;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+
+    .mobile-form-container>.mobile-form>.mobile-form-control>#exp {
+        height: 150px;
+    }
+
+    .mobile-form-container>.mobile-form>button {
+        font: normal normal bold 2.4vw Heebo;
+        color: #011560;
+        background-color: #0EE1DA;
+        border: none;
+        width: 90%;
+        height: 40px;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    body {
+        display: block;
+    }
+
+    .container {
+        position: relative;
+        top: 470px;
+        margin: 0 auto;
+    }
+
+    .mobile-item1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 450px;
+        position: absolute;
+        top: 0;
+        background-color: #020253;
+    }
+
+    .mobile-item1>h1 {
+        font: normal normal bold 9vw Assistant;
+        color: #0EE1DA;
+    }
+
+    .mobile-item1>p {
+        font: normal normal normal 4.5vw Assistant;
+        color: #F9F9F9;
+        text-align: center;
+        width: 60%;
+        margin-top: 20px;
+    }
+
+}

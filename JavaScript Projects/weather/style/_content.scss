@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    height: 100vh;
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        margin-bottom: 0.5rem;
+        align-items: center;
+
+        label {
+            font-family: $font;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+            color: #7cb0f0;
+            font-size: 3rem;
+        }
+
+        input {
+            font-family: $font;
+            width: 220px;
+            height: 30px;
+            font-size: 1.2rem;
+        }
+    }
+
+    button {
+        font-family: $font;
+        font-size: 2rem;
+        background-color: #7cb0f0;
+        color: #fff;
+        border: none;
+        padding: 0.5rem;
+        width: 220px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #1e4e89;
+        }
+    }
+}
+
+#weatherInfo {
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: none;
+    gap: 0.5rem;
+
+
+    h1 {
+        font-family: $font;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-family: $font;
+        color: #7cb0f0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        .form-control {
+            label {
+                font-size: 2.4rem;
+            }
+
+            input {
+                width: 180px;
+                height: 25px;
+                font-size: 1rem;
+            }
+        }
+
+        button {
+            font-size: 1.5rem;
+            padding: 0.3rem;
+            width: 180px;
+        }
+
+        #weatherInfo {
+            width: 180px;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

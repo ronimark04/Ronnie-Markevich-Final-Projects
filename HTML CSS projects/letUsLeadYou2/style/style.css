@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url('../images/Path\ 15.png');
+    background-repeat: no-repeat; */
+    direction: rtl;
+}
+
+
+body>#background-image {
+    z-index: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 569px;
+    height: 643px;
+    background-color: #1A1A1AD4;
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+    top: -440px;
+    right: 285px;
+}
+
+.form-container>h1 {
+    font: normal normal 900 36px/53px Heebo;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+}
+
+.form-container>p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #F9F9F9;
+    width: 417px;
+    margin-bottom: 44px;
+}
+
+.form-container>.form>.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-container>.form>.form-control>label {
+    font: normal normal bold 16px/24px Heebo;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.form-container>.form>.form-control>input {
+    width: 417.5px;
+    height: 50px;
+    border: 1px solid #D31C75;
+}
+
+.form-container>.form>button {
+    width: 166px;
+    height: 50px;
+    background-color: #D31C75;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 20px;
+}
+
+.form-container>.form>button:hover {
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+
+    .form-container {
+        width: 299px;
+        height: 441px;
+        padding: 35px;
+        position: relative;
+        top: -135px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .form-container>h1 {
+        font: normal normal 900 25px/30px Heebo;
+        width: 146px;
+        padding-top: 15px;
+    }
+
+    .form-container>p {
+        font: normal normal normal 15px/22px Heebo;
+        width: 229px;
+        margin-bottom: 15px;
+    }
+
+    body>#background-image {
+        width: 100%;
+    }
+
+    .form-container>.form>.form-control>label {
+        font: normal normal bold 14px/21px Heebo;
+    }
+
+    .form-container>.form>.form-control>input {
+        width: 230px;
+        height: 28px;
+    }
+
+
+    .form-container>.form>button {
+        font: normal normal bold 15px/20px Heebo;
+        letter-spacing: 0.23px;
+        width: 76px;
+        height: 33px;
+        margin-top: 0;
+    }
+}

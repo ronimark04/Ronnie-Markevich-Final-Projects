@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font: normal normal normal 160px/231px Satisfy;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+}
+
+h2 {
+    font: normal normal normal 32px/38px Varela Round;
+    color: #FFFFFF;
+}
+
+p {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+}
+
+.form>.form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form>.form-control>label {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #F9F9F9;
+}
+
+.form>.form-control>input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    width: 417.5px;
+    height: 50px;
+}
+
+.form>button {
+    font: normal normal normal 16px/20px Varela Round;
+    color: #1C1C1C;
+    width: 206.41px;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-top: 40px;
+    border: none;
+}
+
+.form>button:hover {
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 60px;
+        margin: -50px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        width: 319px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .form>.form-control {
+        padding: 10px;
+    }
+
+    .form>.form-control>input {
+        width: 301.55px;
+        height: 36.11px;
+    }
+
+    .form-control>label {
+        font-size: 11px;
+    }
+
+    .form>button {
+        width: 299.86px;
+        height: 33.11px;
+        margin-top: 10px;
+        margin-right: 11px;
+        color: #2823FD;
+        font-size: 11px;
+    }
+
+}

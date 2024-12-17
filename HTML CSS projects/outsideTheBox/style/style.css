@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+    width: 100vw;
+}
+
+.outer1 {
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    height: 634px;
+}
+
+.outer1>.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    height: 100%;
+    gap: 1em;
+}
+
+.outer1>.text-container>h1 {
+    font: normal normal 900 66px/97px Heebo;
+    color: #000000;
+    /* margin-bottom: 10px; */
+}
+
+.outer1>.text-container>p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #000000;
+    align-self: flex-end;
+    width: 70%;
+}
+
+.outer1>a {
+    width: max-content;
+    height: max-content;
+}
+
+
+.outer1>a>.whatsapp-container {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: max-content;
+    padding: 18px;
+    border-radius: 50%;
+    margin: 55px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.outer1>.img-container {
+    display: flex;
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer2 {
+    height: 300px;
+    gap: 1em;
+    margin: 2em 0;
+    padding: 0 1em;
+}
+
+.outer2>a {
+    width: 25%;
+    text-decoration: none;
+}
+
+.outer2>a>.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+}
+
+.outer2>a>.inner>h1 {
+    font: normal normal 900 30px/44px Heebo;
+    color: #0EE1E1;
+}
+
+.outer2>a>.inner>p {
+    font: normal normal normal 15px/22px Heebo;
+    color: #000000;
+    width: 60%;
+    text-align: center;
+}
+
+.outer3 {
+    height: 940px;
+}
+
+.outer3>.map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    background-color: #0EE1E1;
+    border: solid 20px #0EE1E1;
+    overflow: hidden;
+}
+
+.outer3>.form-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F0FFFF;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.outer3>.form-container>.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 100px 50px;
+    gap: 1em;
+}
+
+.outer3>.form-container>.form>h1 {
+    font: normal normal 900 46px/67px Heebo;
+    color: #090909;
+}
+
+.outer3>.form-container>.form>p {
+    font: normal normal normal 15px/22px Heebo;
+    color: #000000;
+}
+
+.outer3>.form-container>.form>.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.outer3>.form-container>.form>.form-control>label {
+    font: normal normal bold 13px/19px Heebo;
+    color: #2C2C2C;
+}
+
+.outer3>.form-container>.form>.form-control>input {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 4px solid #0EE1E1;
+    height: 51px;
+}
+
+.outer3>.form-container>.form>.form-control>#name2 {
+    height: 135px;
+}
+
+.outer3>.form-container>.form>input[type="submit"] {
+    font: normal normal bold 20px/28px Heebo;
+    letter-spacing: 0.3px;
+    color: #000000;
+    border: none;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    height: 51px;
+}
+
+.outer3>.form-container>.form>input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.outer4 {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.outer4>a>.item {
+    background-color: #0EE1E1;
+    padding: 25px;
+    border-radius: 50%;
+    margin: 22px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+
+.outer4>a>.item>i {
+    font-size: 34px;
+    color: #000000;
+}
+
+.outer4>a>.facebook-container {
+    width: 80px;
+}
+
+.outer4>a>.facebook-container>.fa-facebook-f {
+    position: relative;
+    left: -5px;
+}
+
+body {
+    border-bottom: solid 19px #0EE1E1;
+}
+
+@media(max-width: 768px) {
+    .outer1>#whatsapp-a {
+        display: none;
+    }
+
+    .outer1 {
+        flex-direction: column-reverse;
+        height: 391px;
+        align-items: center;
+    }
+
+    .outer1>.text-container {
+        align-items: center;
+
+        position: relative;
+        top: -50px;
+    }
+
+
+    .outer1>.text-container>h1 {
+        font: normal normal 900 33px/49px Heebo;
+        align-self: flex-end;
+    }
+
+    .outer1>.text-container>p {
+        font: normal normal normal 15px/22px Heebo;
+        width: 295px;
+        height: 88px;
+    }
+
+    .outer1>.img-container {
+        justify-content: flex-end;
+        width: 310px;
+
+        height: 300px;
+    }
+
+    .outer1>.img-container>img {
+        width: 80px;
+        position: relative;
+        left: 100;
+    }
+
+    .outer2 {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .outer2>a {
+        width: 100%;
+    }
+
+    .outer2>a>.inner {
+        height: 247px;
+    }
+
+    .outer3 {
+        flex-direction: column;
+    }
+
+    .outer3>.form-container {}
+
+    .outer3>.form-container>.form {
+        width: 90%;
+    }
+
+    .outer3>.form-container>.form>h1 {
+        font: normal normal 900 32px/47px Heebo;
+    }
+
+    .outer3>.form-container>.form>p {
+        font: normal normal normal 15px/22px Heebo;
+        width: 70%;
+        align-self: flex-end;
+    }
+
+    .outer3>.form-container>.form>.form-control>input {
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+    }
+
+    .outer3 {
+        height: max-content;
+    }
+
+    .outer3>.map-container {
+        align-items: center;
+        justify-content: center;
+
+        background-color: #0EE1E1;
+        border: solid 30px #0EE1E1;
+
+        width: 100%;
+    }
+
+    .outer3>.map-container>img {
+        width: 90%;
+    }
+
+    .outer4>a>.item {
+        padding: 17px;
+    }
+
+
+    .outer4>a>.item>i {
+        font-size: 20px;
+    }
+
+    .outer4>a>.facebook-container {
+        width: 55px;
+    }
+
+    .outer4>a>.facebook-container>.fa-facebook-f {
+        position: relative;
+        left: -4px;
+    }
+
+    body {
+        border-bottom: solid 11px #0EE1E1;
+    }
+}
